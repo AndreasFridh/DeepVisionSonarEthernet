@@ -1,0 +1,6 @@
+EthernetSonar.o: EthernetSonar.cpp EthernetSonarAPI.h DVSFileWriter.h \
+ JSONFileWriter.h DSSPParser.h
+EthernetSonarAPI.o: EthernetSonarAPI.cpp EthernetSonarAPI.h
+DVSFileWriter.o: DVSFileWriter.cpp DVSFileWriter.h
+JSONFileWriter.o: JSONFileWriter.cpp JSONFileWriter.h
+DSSPParser.o: DSSPParser.cpp DSSPParser.h
