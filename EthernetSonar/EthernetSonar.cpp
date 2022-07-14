@@ -38,8 +38,8 @@ int main(int argc, char* argv[]) {
 	strcat(filename_dvs, argv[2]);
 	*/
 
-	strcat(filename_json, "output.json");
-	strcat(filename_dvs, "output.dvs");
+	strcat(filename_json, "output/output.json");
+	strcat(filename_dvs, "output/output.dvs");
 	
 	float range = (float)int_range;							
 	int nSamples = 500;										
