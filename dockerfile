@@ -1,9 +1,11 @@
-FROM amytabb/docker_ubuntu16_essentials
+FROM debian:9
+
+LABEL maintainer="andreas@pyramind.se"
 
 # Install python3
-RUN     apt-get update
-RUN     apt-get install -y python3
-
+RUN apt-get clean
+RUN apt-get update --allow-insecure-repositories
+RUN apt-get install -y python g++ make
 # Copy Sonar C++ code to image
 COPY EthernetSonar /EthernetSonar
 
@@ -18,6 +20,7 @@ RUN chmod +x run.sh
 CMD sh ./run.sh
 
 EXPOSE 80
+
 
 
 
