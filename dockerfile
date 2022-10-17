@@ -1,3 +1,4 @@
+# Base image for deploying on multi arch
 FROM debian:9
 
 LABEL maintainer="andreas@pyramind.se"
